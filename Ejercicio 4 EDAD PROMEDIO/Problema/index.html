@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var suma=0;
+		var i=0;
+		var numeroAlumnos=parseInt(prompt("¿Cuántos alumnos son?"));
+		while(numeroAlumnos>0 && i<numeroAlumnos){
+			i++;
+			var nota = 0;
+			do{
+				nota=parseInt(prompt("introducir la nota"+i));
+			}while(nota<0)
+			suma+=nota;
+		}
+		var promedio=suma/numeroAlumnos;
+		alert('promedio es'+promedio);
+
+	</script>
+</head>
+<body>
+	
+</body>
